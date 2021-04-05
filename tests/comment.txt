@@ -1,0 +1,12 @@
+A bug was discovered using the something input file. The long dash character – cannot be loaded property, unless you set the encoding when writing the output file, or the default encoding matches utf-8.
+Pytest output:
+E                   AssertionError: assert 'SOMETHING IN...THAT MORNING.' == 'SOMETHING IN...THAT MORNING.'
+E                     Skipping 131 identical leading characters in diff, use -v to show
+E                     Skipping 162 identical trailing characters in diff, use -v to show
+E                     -  THE THUG â€“ ALTHOU
+E                     ?           ^
+E                     +  THE THUG Â€“ ALTHOU
+E                     ?
+1 failed, 9 passed in 0.15s
+
+Pytest output
