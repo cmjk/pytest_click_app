@@ -9,4 +9,8 @@ E                     +  THE THUG Â€“ ALTHOU
 E                     ?
 1 failed, 9 passed in 0.15s
 
-Pytest output
+Pytest output after modifying cli to use utf-8:
+collected 10 items
+
+tests\test_upper_case_file.py ..........                                                                                                  [100%]
+10 passed in 0.07s
